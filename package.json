@@ -12,7 +12,8 @@
   },
   "lint-staged": {
     "src/**/*": [
-      "yarn lint --fix"
+      "yarn lint --fix",
+      "yarn test --bail"
     ]
   },
   "dependencies": {
@@ -22,6 +23,8 @@
   },
   "devDependencies": {
     "@babel/preset-typescript": "^7.15.0",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^12.1.2",
     "@types/jest": "^27.0.2",
     "@types/react": "^17.0.30",
     "@typescript-eslint/eslint-plugin": "^5.1.0",
